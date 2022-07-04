@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+    <div class="container">
+        <form action="" id="survey-form">
+            <label id="name-label">Name:<br>
+                <input type="text" id="name" placeholder="Enter your name" required/>
+            </label><br>
+
+            <label id="email-label">Email:<br>
+                <input type="email" id="email" placeholder="Enter your email address" required/>
+            </label><br>
+
+            <label id="number-label">Age:<br>
+                <input type="number" id="number" placeholder="Enter your age" min="18" max="100" required/>
+            </label><br>
+
+            
+            <label id="number-label">Which option best describe your role? 
+                <select name="" id="dropdown">
+                    <option value="">Select an option</option>
+                    <option value="1">Intern</option>
+                    <option value="2">Junior Developer</option>
+                    <option value="3">Senior Developer</option>
+                    <option value="4">Freelancer</option>
+                </select>
+            </label>
+           
+                <div class="radio">
+                Will you recommend us?
+                <label id="number-label"> 
+                    <input id="radio" type="radio" name="recommendation" value="a"/> Definitely
+                </label> 
+                <label id="number-label"> 
+                    <input id="radio" type="radio" name="recommendation" value="b"/> Maybe
+                </label> 
+                <label id="number-label"> 
+                    <input id="radio" type="radio" name="recommendation" value="c"/> Never
+                </label> 
+                </div>
+                <hr/>
+
+                <div class="checkbox">
+                    <label>Where do you work from?<br>
+                        <input id="checkbox" type="checkbox" name="terms" value="0"/> Remote
+                    </label>
+                    <label>
+                        <input id="checkbox" type="checkbox" name="terms" value="1"/> Hybrid
+                    </label>
+                    <label>
+                        <input id="checkbox" type="checkbox" name="terms" value="2"/> Onsite
+                    </label>
+                </div>
+            <label for="">
+                <textarea name="" id="" cols="15" rows="5" placeholder="Tell us about yourself"></textarea>
+            </label>
+                
+            <button id="submit" type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
